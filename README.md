@@ -10,14 +10,9 @@ yarn install
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### Dependencies
 ```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
+yarn add axios
 ```
 
 # About score-cartola
@@ -29,3 +24,6 @@ Score Cartola is a project for soccer lovers who accompany the Brazilian champio
 - Create groups of friends to compare the score
 - Monitor the performance of your team
 - Compare your score with specific friend
+
+### API
+https://github.com/wgenial/cartrolandofc/blob/master/nova-api.md
