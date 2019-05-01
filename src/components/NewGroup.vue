@@ -1,6 +1,6 @@
 <template>
   <div class="component-newgroup">
-    <input type="text" placeholder="Nome do grupo" v-model="newGroup">
+    <input type="text" placeholder="Nome do grupo" v-model="newGroup" autofocus>
     
     <router-link to="/make-group" tag="button">
       <span @click="pushGroup()">
@@ -18,6 +18,9 @@ export default {
     return {
       newGroup: '',
     }
+  },
+  mounted: function() {
+    localStorage.removeItem('newGroup');
   },
   methods: {
     pushGroup: function() {

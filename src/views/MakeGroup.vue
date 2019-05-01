@@ -1,19 +1,29 @@
 <template>
   <div>
-    <h1>Criar Grupo {{ returnStorage }}</h1>
+    <h2>Criando Grupo: {{ returnStorage }}</h2>
+    <div>
+      <h4>Inserir Times:</h4>
+      
+      <SearchTeam/>
+
+    </div>
   </div>
 </template>
 
 <script>
+import SearchTeam from '@/components/SearchTeam.vue'
+
 export default {
   name: 'MakeGroup',
+  components: {
+    SearchTeam
+  },
   data(){
     return {
       returnStorage: ''
     }
   },
   mounted: function() {
-    console.log('here');
     this.returnStorage = localStorage.getItem('newGroup');
   }
 }
